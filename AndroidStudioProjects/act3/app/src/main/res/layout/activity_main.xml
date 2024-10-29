@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+
+
+    <TextView
+        android:id="@+id/textSpread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spread"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnSpread1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTN1"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textSpread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSpread2"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+
+    <Button
+        android:id="@+id/btnSpread2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTN2"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textSpread"
+        app:layout_constraintStart_toEndOf="@id/btnSpread1"
+        app:layout_constraintEnd_toStartOf="@id/btnSpread3"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+
+    <Button
+        android:id="@+id/btnSpread3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTN3"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textSpread"
+        app:layout_constraintStart_toEndOf="@id/btnSpread2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+
+
+    <TextView
+        android:id="@+id/textSpreadInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spread inside"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpread1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnSpreadInside1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTN1"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginRight="@android:dimen/app_icon_size"
+        app:layout_constraintTop_toBottomOf="@+id/textSpreadInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSpreadInside2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+
+    <Button
+        android:id="@+id/btnSpreadInside2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTN2"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textSpreadInside"
+        app:layout_constraintStart_toEndOf="@id/btnSpreadInside1"
+        app:layout_constraintEnd_toStartOf="@id/btnSpreadInside3"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+
+    <Button
+        android:id="@+id/btnSpreadInside3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@android:dimen/app_icon_size"
+        android:text="BTN3"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textSpreadInside"
+        app:layout_constraintStart_toEndOf="@id/btnSpreadInside2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+
+
+    <TextView
+        android:id="@+id/textPacked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Packed"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpreadInside1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnPacked1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@android:dimen/app_icon_size"
+        android:text="BTN1"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textPacked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPacked2"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+
+    <Button
+        android:id="@+id/btnPacked2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BTN2"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textPacked"
+        app:layout_constraintStart_toEndOf="@id/btnPacked1"
+        app:layout_constraintEnd_toStartOf="@id/btnPacked3"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+
+    <Button
+        android:id="@+id/btnPacked3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BTN3"
+        android:layout_marginRight="@android:dimen/app_icon_size"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textPacked"
+        app:layout_constraintStart_toEndOf="@id/btnPacked2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+
+
+    <TextView
+        android:id="@+id/textWeighted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weighted"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/btnPacked1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnWeighted1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTN1"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textWeighted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnWeighted2"
+        app:layout_constraintHorizontal_weight="1" />
+
+
+    <Button
+        android:id="@+id/btnWeighted2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTN2"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textWeighted"
+        app:layout_constraintStart_toEndOf="@id/btnWeighted1"
+        app:layout_constraintEnd_toStartOf="@id/btnWeighted3"
+        app:layout_constraintHorizontal_weight="1" />
+
+
+    <Button
+        android:id="@+id/btnWeighted3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BTN3"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textWeighted"
+        app:layout_constraintStart_toEndOf="@id/btnWeighted2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
