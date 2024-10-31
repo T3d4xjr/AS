@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MiguelÁngelRuizAguilarACTIVIDAD2TEMA5BOTONES" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MiguelÁngelRuizAguilarACTIVIDAD2TEMA5BOTONES" parent="Base.Theme.MiguelÁngelRuizAguilarACTIVIDAD2TEMA5BOTONES" />
+</resources>
