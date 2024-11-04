@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/foto">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PROGRAMACIÓN MULTIMEDIA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/labelGmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Nombre"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center" />
+
+
+    <EditText
+        android:id="@+id/editTextGmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su nombre"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:drawableStart="@drawable/baseline_email_24"
+        app:layout_constraintTop_toBottomOf="@id/labelGmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp" />
+
+
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editTextGmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center" />
+
+
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/labelPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCancelar"
+        android:layout_marginTop="200dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+
+
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        app:layout_constraintStart_toEndOf="@id/btnAceptar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageViewPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/roca"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+
+    <TextView
+        android:id="@+id/textViewBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#08FF00"
+        android:visibility="gone"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/baseline_check_24"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/buttonCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textViewBienvenida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
