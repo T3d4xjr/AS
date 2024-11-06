@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Arrays;
+
 public class MainActivity extends AppCompatActivity {
 
     ListView listado;
@@ -31,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
         textSelecciona=findViewById(R.id.textSelecciona);
 
 
-        ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datos);
+        String[] datosLimitados = Arrays.copyOfRange(datos, 0, Math.min(10, datos.length));
+
+        ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, datosLimitados);
         listado.setAdapter(adaptador);
 
 
@@ -44,8 +48,9 @@ public class MainActivity extends AppCompatActivity {
         listado.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int posicion, long id) {
-            textSelecciona.getText();
             String elemento =(String) parent.getAdapter().getItem(posicion);
+
+            textSelecciona.setText("Seleccionaste: " + elemento);
             }
         });
 
