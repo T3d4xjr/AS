@@ -7,13 +7,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#D9BBBB">
     <ListView
         android:id="@+id/listado"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
-
+        android:layout_weight="1"
+        android:padding="20dp"/>
 
     <TextView
         android:id="@+id/textSelecciona"
@@ -22,9 +23,9 @@
         android:layout_marginTop="5dp"
         android:text="Selecciona un país"
         android:textSize="48sp"
-        android:textColor="#000000"
-        android:gravity="center"/>
-
-
+        android:textColor="#C7BDBD"
+        android:gravity="center"
+        android:background="#6A5353"
+        />
 
 </LinearLayout>
