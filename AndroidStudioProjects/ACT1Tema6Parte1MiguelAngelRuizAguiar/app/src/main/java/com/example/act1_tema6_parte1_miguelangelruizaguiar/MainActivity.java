@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Inicializar el ListView después de setContentView
-        listado = findViewById(R.id.lista);
+        listado = findViewById(R.id.listado);
         textSelecciona=findViewById(R.id.textSelecciona);
 
 
