@@ -3,6 +3,7 @@ package com.example.act3_tema6_xml_miguelangelruizaguilar;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
 
         // Configuración del Toolbar
         Toolbar toolbar = findViewById(R.id.main);
@@ -41,22 +43,22 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        String mensaje = "Has elegido el día: ";
+        TextView texto1 =findViewById(R.id.textoMenu);
         switch (item.getItemId()) {
             case R.id.Lunes:
-                Toast.makeText(this, mensaje + "lunes", Toast.LENGTH_SHORT).show();
+                texto1.setText("Has pulsado: " +"lunes");
                 return true;
             case R.id.Martes:
-                Toast.makeText(this, mensaje + "martes", Toast.LENGTH_SHORT).show();
+                texto1.setText("Has pulsado: " +" martes.");
                 return true;
             case R.id.Miercoles:
-                Toast.makeText(this, mensaje + "miércoles", Toast.LENGTH_SHORT).show();
+                texto1.setText("Has pulsado: " +" miercoles.");
                 return true;
             case R.id.Jueves:
-                Toast.makeText(this, mensaje + "jueves", Toast.LENGTH_SHORT).show();
+                texto1.setText("Has pulsado: " +" jueves.");
                 return true;
             case R.id.Viernes:
-                Toast.makeText(this, mensaje + "viernes", Toast.LENGTH_SHORT).show();
+                texto1.setText("Has pulsado: " +" viernes.");
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

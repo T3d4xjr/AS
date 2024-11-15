@@ -14,5 +14,16 @@
       android:background="#381C5D"
       app:title="Mi Toolbar"
       app:titleTextColor="@android:color/white"/>
+  <TextView
+      android:id="@+id/textoMenu"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Pulse una opcion de menu"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:textSize="25dp"
+      android:textColor="#FF0000"
+      android:layout_marginTop="550dp"
+      />
 
 </LinearLayout>
