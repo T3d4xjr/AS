@@ -11,7 +11,7 @@ public class EditTextActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_text);
+        setContentView(R.layout.activity_edittext);
 
         // Configurar título en el Toolbar
         if (getSupportActionBar() != null) {
